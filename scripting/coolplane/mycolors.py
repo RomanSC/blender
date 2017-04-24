@@ -10,21 +10,38 @@
 """
 import math
 
-def gimme_color(frequency1, frequency2, frequency3,
+# Float rgb
+def float_rgb_color(frequency1, frequency2, frequency3,
                 phase1, phase2, phase3, center=128,
                 width=127, length=50
                ):
     myrainbow = []
 
     for i in range(length):
-        r = math.sin((frequency1 * i + phase1)) * (width + center)
-        g = math.sin((frequency2 * i + phase2)) * (width + center)
-        b = math.sin((frequency3 * i + phase3)) * (width + center)
+        r = abs(math.sin((frequency1 * i + phase1)) * (width + center))
+        g = abs(math.sin((frequency2 * i + phase2)) * (width + center))
+        b = abs(math.sin((frequency3 * i + phase3)) * (width + center))
 
         # Convert to float RGB
         r /= 255
         g /= 255
         b /= 255
+
+        myrainbow.append((r, g, b))
+
+    return myrainbow
+
+# Non-float rgb
+def rgb_color(frequency1, frequency2, frequency3,
+                phase1, phase2, phase3, center=128,
+                width=127, length=50
+               ):
+    myrainbow = []
+
+    for i in range(length):
+        r = abs(int(math.sin((frequency1 * i + phase1)) * (width + center)))
+        g = abs(int(math.sin((frequency2 * i + phase2)) * (width + center)))
+        b = abs(int(math.sin((frequency3 * i + phase3)) * (width + center)))
 
         myrainbow.append((r, g, b))
 

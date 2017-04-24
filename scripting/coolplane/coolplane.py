@@ -13,7 +13,7 @@ from math import *
 from mathutils import *
 import random
 
-from mycolors import gimme_color
+from mycolors import float_rgb_color
 
 def rainbow_render(savedir, rainbow):
     for x in range(len(rainbow)):
@@ -75,9 +75,9 @@ def make_coolplane(plane, random=False):
 
     # Default is to not use a random seed
     if not random:
-        bpy.ops.mesh.subdivide(number_cuts=20,
-                               fractal=0.333,
-                               fractal_along_normal=0.111)
+        bpy.ops.mesh.subdivide(number_cuts=35,
+                               fractal=0.4,
+                               fractal_along_normal=0.4)
     else:
         mynums = [i for i in range(30)]
         myrand_num = random.choice(mynums)
@@ -178,14 +178,17 @@ def main():
     # center = 128
     # width = 127
     # frequency = 2.4
-    # rainbow = gimme_color(frequency,frequency,frequency,0,2,4,center,width,50);
+    # rainbow = float_rgb_color(frequency,frequency,frequency,0,2,4,center,width,50);
 
     # center = 128
     # width = 127
     # frequency = 0.10
-    # rainbow = gimme_color(frequency,frequency,frequency,0,2,4,center,width,50);
+    # rainbow = float_rgb_color(frequency,frequency,frequency,0,2,4,center,width,50);
 
-    rainbow = gimme_color(1,1,1,0,2,4);
+    freq = .125
+    c = 200
+    w = 120
+    rainbow = float_rgb_color(freq, freq, freq, 0, 2, 4, c, w);
 
     rainbow_render(savedir, rainbow)
 
