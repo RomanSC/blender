@@ -1,0 +1,49 @@
+    For my 3D modeling final I decided to go big and model an entire chess set.
+The most time consuming part of the process was making the individual pieces
+themselves. Pieces like the pawn, rook, and queen were the easiest as they are
+semetrical. Others such as the knight, bishop, and king were more difficult.
+Knight being the least semetrical of all of the shapes.
+
+    To make each piece I started by chaning the viewing mode to ortholinear
+mode by pressing numpad 5. I then selected the background image within the
+3D view pane of the Blender window. Making sure that the piece I was about
+to model was centered to the grid. I used the Blender add-on "Add Mesh:
+Extra Objects" to create single vertices in object mode, tracing around the
+semetrical parts of the chess piece. For the pawn it's the entire object.
+For the knight it's only the pedestal that the horse sits on. After tracing
+one side of the chess piece by adding a single vertex then extruding vertices
+all the way down I change to object mode and apply the screw modifier from the
+modifier properties tab. (Right pane) after applying the screw modifier I clicked
+on the object button at the bottom of 3d view, selected convert to, and mesh from
+curve. Which creates a 3D mesh from the object made by using the screw tool. In
+edit mode I check the bottom and top of the model for holes.
+
+    For the asymetrical portions of each chess piece instead of starting with
+single vertices when tracing I started with a cylinder making sure that it is
+centered along the x and y axis. I switch back into ortholinear view mode and
+begin extruding the cylinder up scaling each extrusion to the outline of my
+reference image. After the cylinder matches the height and width tracing
+my reference I scaled the each extrusion along the y axis so that it begins
+to look like a 3D version of my reference. A horse head for the knight chess
+pice for example. For the horse I using the decimate modifier and pulled out
+two vertices to form the ears. I spun the model around on the z axis pulling
+in and pushing out individual vertices while repairing holes in the model
+until it took the shape of a horse.
+
+    For the top of the bishop it was a similar process of extruding a
+cylinder upwards. Only I created an object out of the circle to make
+the cutout at the top of the piece. I then positioned it and used
+the boolean modifier to make a cutout in the shape. For all the circle
+tops in my models I deleted the circles I had traced and replaced them
+with uv spheres in edit mode to make the circles more perfect.
+
+    To make the chess board I created a cube and scaled it down on the z
+axis to 25% of it's height. I then applied a material and wood texture
+to it. I duplicated it moving the copy up on the y axis, changing the
+material color then duplicate those piece in the x axis, then joined
+my 4 objects. Using the array modifier I created 4 copies in the y
+direction applied it, and used one more array modifier to make 4 copies
+in the x direction. Completing my 8 by 8 chess board.
+
+    I included some screenshots of the process and a final render of
+my chess pieces set up on the board.
