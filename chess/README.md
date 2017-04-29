@@ -2,9 +2,11 @@
 
 3D Modeling Seminar final project.
 
-A 3D printable chess set by Roman S. Collins
+A 3D printable chess set by Roman S. Collins<br />
 
-![alt text]()
+![Chess set.](https://github.com/RomanSC/blender/blob/master/chess/full_set_render1.png)<br />
+
+![Ruby knight.](https://github.com/RomanSC/blender/blob/master/chess/ruby_knight_render.png)<br />
 
 ### Sources:
 
