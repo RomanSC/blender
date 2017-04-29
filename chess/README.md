@@ -4,6 +4,8 @@
 
 A 3D printable chess set by Roman S. Collins
 
+![alt text]()
+
 ### Sources:
 
 How to Model a Chess Piece in Under 30 Seconds:<br />
