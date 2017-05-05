@@ -1,0 +1,104 @@
+<pre>
+<center>
+        <img width=70% height=70% src="full_set_render1.png"
+             align="center">
+        </img>
+</center>
+<font face="Courier">
+    For my 3D modeling final I decided to model a full chess set. With time
+saving techniques demonstrated by using the screw modifier tool, convert to mesh,
+edit mode, and a few others, I was able to model the complete set of pieces I
+hope to later print. The group of objects I have created can also be used to
+render images like Figure 1.
+
+    The most time consuming part of the process was making the individual pieces
+themselves. Pieces like the pawn, rook, and queen were the easiest as they are
+symmetrical.  Others such as the knight, bishop, and king were more difficult.
+Knight being the least symmetrical of all of the shapes.
+
+    To make each piece I started by changing the viewing mode to ortho linear
+(numpad 5). I then selected the background image within the 3D view pane of the
+Blender window. Making sure that the piece I was about to model was centered to
+the grid. I used the Blender add-on "Add Mesh: Extra Objects" to create single
+vertices in object mode, tracing around the symmetrical parts of the chess piece.
+For the pawn it's the entire object.  For the knight it's only the pedestal that
+the horse sits on.  After tracing one side of the chess piece by adding a single
+vertex then extruding vertices all the way down I change to object mode and apply
+the screw modifier from the modifier properties tab. (Right pane) after applying
+the screw modifier I clicked on the object button at the bottom of 3d view,
+selected convert to, and mesh from curve. Which creates a 3D mesh from the object
+made by using the screw tool. In edit mode I check the bottom and top of the
+model for holes.
+
+    For the asymmetrical portions of each chess piece instead of starting with
+single vertices when tracing I started with a cylinder making sure that it is
+centered along the x and y axis. I switch back into ortho linear view mode and
+begin extruding the cylinder up scaling each extrusion to the outline of my
+reference image.
+
+    After the cylinder matches the height and width tracing my reference I scaled
+the each extrusion along the y axis so that it begins to look like a 3D version
+of my reference. A horse head for the knight chess piece for example. For the
+horse I using the decimate modifier and pulled out two vertices to form the ears.
+I spun the model around on the z axis pulling in and pushing out individual
+vertices while repairing holes in the model until it took the shape of a horse.
+
+    For the top of the bishop it was a similar process of extruding a cylinder
+upwards. Only I created an object out of the circle to make the cutout at the top
+of the piece. I then positioned it and used the boolean modifier to make a cutout
+in the shape. For all the circle tops in my models I deleted the circles I had
+traced and replaced them with uv spheres in edit mode to make the circles more
+perfect.
+
+    To make the chess board I created a cube and scaled it down on the z axis to
+25% of it's height. I then applied a material and wood texture to it. I
+duplicated it moving the copy up on the y axis, changing the material color then
+duplicate those piece in the x axis, then joined my 4 objects. Using the array
+modifier I created 4 copies in the y direction applied it, and used one more
+array modifier to make 4 copies in the x direction.  Completing my 8 by 8
+chessboard. I included some screenshots of the process and a final render of my
+chess pieces set up on the board.
+
+    I hope to someday print the pieces after resizing the bases and tops to fit
+standards of regulated chess pieces. I may even consider coming up with a way
+to print a chessboard like the Adafruit one to go along with my pieces.
+
+<h4>Links to My .blend Files and Writeup (Same as on this
+page):</h4><ul><li>Writeup:
+<a href="https://docs.google.com/document/d/1UrA-zjmGgG4v8Id8jI76VlXoBy-u-DTVVlNycSx0AUY/edit">https://docs.google.com/document/d/1UrA-zjmGgG4v8Id8jI76VlXoBy-u-DTVVlNycSx0AUY/edit</a>
+</li>
+<li>Google Drive:
+<a href="https://drive.google.com/drive/folders/0B9FP_iyl9ioZdENsWU85cDNQRjA">https://drive.google.com/drive/folders/0B9FP_iyl9ioZdENsWU85cDNQRjA</a>
+</li>
+<li> Github:
+<a href="https://github.com/RomanSC/blender/tree/master/chess">https://github.com/RomanSC/blender/tree/master/chess</a>
+</li></ul><h4>Sources:</h4><ul><li>Chess Board Wikipedia:<br/><a href="https://en.wikipedia.org/wiki/Chessboard">https://en.wikipedia.org/wiki/Chessboard</a>
+</li>
+<li>How to Model a Chess Piece in Under 30 Seconds:<br/>
+<a href="https://www.youtube.com/watch?v=AsVOCm3Z1U8">https://www.youtube.com/watch?v=AsVOCm3Z1U8</a>
+</li>
+<li>Blender: Modeling Chess Pieces:<br/>
+<a href="https://www.youtube.com/watch?v=_J2-UBK9_PA">https://www.youtube.com/watch?v=_J2-UBK9_PA</a>
+</li>
+<li>Blender Modeling Tutorial - Making a Knight Chess Piece Part 1 Making the Horse's Head:<br/>
+<a href="https://www.youtube.com/watch?v=9XiP4AW2Uwc">https://www.youtube.com/watch?v=9XiP4AW2Uwc</a>
+</li>
+<li>Blender Modeling Making a Chessboard Using the Array Modifier and the Generated Marble Texture:<br/>
+<a href="https://www.youtube.com/watch?v=CYSF2BrM8qw">https://www.youtube.com/watch?v=CYSF2BrM8qw</a>
+</li>
+<li>how to get objects from different files into one file:<br/>
+<a href="https://blender.stackexchange.com/questions/21170/how-to-get-objects-from-different-files-into-one-file">https://blender.stackexchange.com/questions/21170/how-to-get-objects-from-different-files-into-one-file</a>
+</li>
+<li>
+How can apply a material to multiple objects simultaneously?<br/>
+<a href="https://blenderartists.org/forum/showthread.php?24688-How-can-apply-a-material-to-multiple-objects-simultaneously">https://blenderartists.org/forum/showthread.php?24688-How-can-apply-a-material-to-multiple-objects-simultaneously</a>
+</li>
+<li>Manuel Graphics - Blender Tutorial: Low Poly Animals:<br/>
+<a href="https://www.youtube.com/watch?v=h5gGkHMBLIU">https://www.youtube.com/watch?v=h5gGkHMBLIU</a>
+</li>
+<li>Adafruit 3D Printable Chess Set:<br/>
+<a href="https://www.youtube.com/watch?v=RUPfDjhZL-4">https://www.youtube.com/watch?v=RUPfDjhZL-4</a>
+</li>
+<ul>
+</font>
+</pre>
